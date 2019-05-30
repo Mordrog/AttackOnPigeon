@@ -48,9 +48,10 @@ func _physics_process(delta):
 	if Input.is_action_pressed("shoot") and !anim_player.is_playing():
 		anim_player.play("shoot")
 		var coll = raycast.get_collider()
-		$"../gui/debug".text = str(raycast.get_collider())
+		#$"../gui/debug".text = str(raycast.get_collider())
 		if raycast.is_colliding() and coll.has_method("kill"):
 			coll.kill()
+			global.points = global.points + 1 
  
 func damage(damage:float):
 	health -= damage
