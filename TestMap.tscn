@@ -31,6 +31,9 @@ __meta__ = {
 [node name="Schelves19" parent="GridMap" instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -27.3 )
 
+[node name="Schelves246" parent="GridMap" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -27.3 )
+
 [node name="Schelves60" parent="GridMap" instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 1, -27.3 )
 
@@ -196,6 +199,144 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 1, 5.85 )
 [node name="Schelves5" parent="GridMap" instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 7.8 )
 
+[node name="Schelves221" parent="GridMap" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -9, 1, 36 )
+
+[node name="Schelves256" parent="GridMap" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 36.7323, 1, 19.2622 )
+
+[node name="Schelves227" parent="GridMap" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -11, 1, 36 )
+
+[node name="Schelves278" parent="GridMap" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 34.7323, 1, 19.2622 )
+
+[node name="Schelves228" parent="GridMap" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -13, 1, 36 )
+
+[node name="Schelves271" parent="GridMap" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 32.7323, 1, 19.2622 )
+
+[node name="Schelves224" parent="GridMap" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -5, 1, 36 )
+
+[node name="Schelves263" parent="GridMap" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 40.7323, 1, 19.2622 )
+
+[node name="Schelves225" parent="GridMap" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -3, 1, 36 )
+
+[node name="Schelves262" parent="GridMap" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 42.7323, 1, 19.2622 )
+
+[node name="Schelves229" parent="GridMap" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -15, 1, 36 )
+
+[node name="Schelves277" parent="GridMap" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 30.7323, 1, 19.2622 )
+
+[node name="Schelves230" parent="GridMap" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -17, 1, 36 )
+
+[node name="Schelves265" parent="GridMap" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 28.7323, 1, 19.2622 )
+
+[node name="Schelves231" parent="GridMap" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -19, 1, 36 )
+
+[node name="Schelves270" parent="GridMap" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 26.7323, 1, 19.2622 )
+
+[node name="Schelves232" parent="GridMap" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -21, 1, 36 )
+
+[node name="Schelves269" parent="GridMap" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 24.7323, 1, 19.2622 )
+
+[node name="Schelves233" parent="GridMap" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -23, 1, 36 )
+
+[node name="Schelves261" parent="GridMap" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 22.7323, 1, 19.2622 )
+
+[node name="Schelves234" parent="GridMap" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -25, 1, 36 )
+
+[node name="Schelves257" parent="GridMap" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 20.7323, 1, 19.2622 )
+
+[node name="Schelves235" parent="GridMap" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -27, 1, 36 )
+
+[node name="Schelves266" parent="GridMap" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 18.7323, 1, 19.2622 )
+
+[node name="Schelves236" parent="GridMap" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -29, 1, 36 )
+
+[node name="Schelves276" parent="GridMap" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 16.7323, 1, 19.2622 )
+
+[node name="Schelves237" parent="GridMap" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -31, 1, 36 )
+
+[node name="Schelves264" parent="GridMap" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 14.7323, 1, 19.2622 )
+
+[node name="Schelves238" parent="GridMap" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -33, 1, 36 )
+
+[node name="Schelves272" parent="GridMap" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 12.7323, 1, 19.2622 )
+
+[node name="Schelves239" parent="GridMap" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -35, 1, 36 )
+
+[node name="Schelves274" parent="GridMap" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 10.7323, 1, 19.2622 )
+
+[node name="Schelves240" parent="GridMap" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -37, 1, 36 )
+
+[node name="Schelves258" parent="GridMap" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 8.7323, 1, 19.2622 )
+
+[node name="Schelves241" parent="GridMap" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -39, 1, 36 )
+
+[node name="Schelves268" parent="GridMap" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6.7323, 1, 19.2622 )
+
+[node name="Schelves242" parent="GridMap" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -41, 1, 36 )
+
+[node name="Schelves260" parent="GridMap" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 4.7323, 1, 19.2622 )
+
+[node name="Schelves243" parent="GridMap" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -43, 1, 36 )
+
+[node name="Schelves275" parent="GridMap" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 2.7323, 1, 19.2622 )
+
+[node name="Schelves244" parent="GridMap" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -45, 1, 36 )
+
+[node name="Schelves259" parent="GridMap" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.7323, 1, 19.2622 )
+
+[node name="Schelves245" parent="GridMap" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -47, 1, 36 )
+
+[node name="Schelves273" parent="GridMap" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -1.2677, 1, 19.2622 )
+
+[node name="Schelves226" parent="GridMap" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -7, 1, 36 )
+
+[node name="Schelves267" parent="GridMap" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 38.7323, 1, 19.2622 )
+
 [node name="Schelves46" parent="GridMap" instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 1, 7.8 )
 
@@ -228,6 +369,12 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 1, 7.8 )
 
 [node name="Schelves6" parent="GridMap" instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 9.75 )
+
+[node name="Schelves222" parent="GridMap" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -15.9459, -11.9938, 10.5653 )
+
+[node name="Schelves223" parent="GridMap" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -15.946, -11.994, 20 )
 
 [node name="Schelves45" parent="GridMap" instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 1, 9.75 )
@@ -367,6 +514,9 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 1, -9.75 )
 [node name="Schelves11" parent="GridMap" instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -11.7 )
 
+[node name="Schelves253" parent="GridMap" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -11.7 )
+
 [node name="Schelves51" parent="GridMap" instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 1, -11.7 )
 
@@ -398,6 +548,9 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 36, 1, -11.7 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 1, -11.7 )
 
 [node name="Schelves12" parent="GridMap" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -13.65 )
+
+[node name="Schelves254" parent="GridMap" instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -13.65 )
 
 [node name="Schelves54" parent="GridMap" instance=ExtResource( 4 )]
@@ -433,6 +586,9 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 1, -13.65 )
 [node name="Schelves13" parent="GridMap" instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -15.6 )
 
+[node name="Schelves255" parent="GridMap" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -15.6 )
+
 [node name="Schelves55" parent="GridMap" instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 1, -15.6 )
 
@@ -466,6 +622,9 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 1, -15.6 )
 [node name="Schelves14" parent="GridMap" instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -17.55 )
 
+[node name="Schelves247" parent="GridMap" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -17.55 )
+
 [node name="Schelves53" parent="GridMap" instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 1, -17.55 )
 
@@ -497,6 +656,9 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 36, 1, -17.55 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 1, -17.55 )
 
 [node name="Schelves15" parent="GridMap" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -19.5 )
+
+[node name="Schelves248" parent="GridMap" instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -19.5 )
 
 [node name="Schelves50" parent="GridMap" instance=ExtResource( 4 )]
@@ -559,6 +721,9 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 1, -19.5 )
 [node name="Schelves16" parent="GridMap" instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -21.45 )
 
+[node name="Schelves249" parent="GridMap" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -21.45 )
+
 [node name="Schelves56" parent="GridMap" instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 1, -21.45 )
 
@@ -590,6 +755,9 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 36, 1, -21.45 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 1, -21.45 )
 
 [node name="Schelves17" parent="GridMap" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -23.45 )
+
+[node name="Schelves250" parent="GridMap" instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -23.45 )
 
 [node name="Schelves59" parent="GridMap" instance=ExtResource( 4 )]
@@ -625,6 +793,9 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 1, -23.45 )
 [node name="Schelves18" parent="GridMap" instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -25.35 )
 
+[node name="Schelves251" parent="GridMap" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -25.35 )
+
 [node name="Schelves58" parent="GridMap" instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 1, -25.35 )
 
@@ -656,6 +827,9 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 36, 1, -25.35 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 40, 1, -25.35 )
 
 [node name="Schelves20" parent="GridMap" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -29.25 )
+
+[node name="Schelves252" parent="GridMap" instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -29.25 )
 
 [node name="Schelves57" parent="GridMap" instance=ExtResource( 4 )]
