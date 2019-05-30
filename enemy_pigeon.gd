@@ -140,7 +140,7 @@ func play_flying_animation():
 	var pigeon_dir = Vector2(flying_direction.x, flying_direction.z)
 	var vec_angle = pigeon_to_player_vec.angle_to(pigeon_dir)
 	#print(String(pigeon_to_player_vec.x) + " " + String(pigeon_to_player_vec.y))
-	print(vec_angle)
+	#print(vec_angle)
 	var new_flying_animation_dir
 	if (vec_angle > -PI/4 and vec_angle <= (PI/4)):
 		 new_flying_animation_dir = FLYING_DIR.TO_PLAYER
@@ -151,7 +151,7 @@ func play_flying_animation():
 	else:
 		 new_flying_animation_dir = FLYING_DIR.FROM_PLAYER	
 	if new_flying_animation_dir != flying_animation_dir:
-		print("Play: ")
+		#print("Play: ")
 		flying_animation_dir = new_flying_animation_dir
 		match flying_animation_dir:
 			FLYING_DIR.LEFT:

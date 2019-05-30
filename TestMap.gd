@@ -9,10 +9,12 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	var scene = load("res://Piegon.tscn")
+	var scene = load("res://EnemyPiegon.tscn")
 	var scene_instance = scene.instance()
 	scene_instance.set_name("scene" + str(activePigeons.size()))
-	if (activePigeons.size() < 30):
+	scene_instance.set_player($Player)
+
+	if (activePigeons.size() < 10):
 		activePigeons.append(scene_instance)
 		add_child(scene_instance) 
 		pass 

@@ -143,7 +143,7 @@ material_override = SubResource( 2 )
 texture = ExtResource( 2 )
 vframes = 5
 hframes = 4
-frame = 16
+frame = 9
 region_rect = Rect2( 0, 0, 600, 600 )
 
 [node name="RayCast" type="RayCast" parent="."]
