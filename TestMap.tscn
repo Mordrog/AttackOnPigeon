@@ -15,9 +15,6 @@ ambient_light_color = Color( 0.952941, 0.890196, 0.890196, 1 )
 [node name="Spatial" type="Spatial"]
 script = ExtResource( 1 )
 
-[node name="Pigeon" parent="." instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.63835, 1.47932, 2.98682 )
-
 [node name="GridMap" type="GridMap" parent="."]
 mesh_library = ExtResource( 3 )
 data = {

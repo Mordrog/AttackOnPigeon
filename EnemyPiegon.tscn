@@ -138,7 +138,7 @@ transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0 )
 shape = SubResource( 1 )
 
 [node name="Sprite3D" type="Sprite3D" parent="."]
-transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 1, 0, 0, 0 )
+transform = Transform( 0.2, 0, 0, 0, 0.2, 0, 0, 0, 1, 0, 0, 0 )
 material_override = SubResource( 2 )
 texture = ExtResource( 2 )
 vframes = 5
