@@ -21,8 +21,12 @@ func _ready():
  
 func _input(event):
 	if event is InputEventMouseMotion:
-		rotation_degrees.y -= MOUSE_SENS_HORIZONTAL * event.relative.x
-		rotation_degrees.x -= MOUSE_SENS_VERTICAL * event.relative.y
+		var camera_x = -MOUSE_SENS_VERTICAL * event.relative.y
+		var camera_y = -MOUSE_SENS_HORIZONTAL * event.relative.x
+
+		if (camera_x + rotation_degrees.x  < 90 || camera_x + rotation_degrees.x  > -90):
+			rotation_degrees.x = clamp(camera_x + rotation_degrees.x, -70, 70)
+		rotation_degrees.y += camera_y
  
 func _process(delta):
 	health_rect.modulate.a = lerp(health_rect.modulate.a, MAX_HEALTH_RED - (health/MAX_HEALTH), 0.05)
