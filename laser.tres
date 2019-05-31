@@ -1,0 +1,89 @@
+[gd_resource type="VisualShader" load_steps=6 format=2]
+
+[sub_resource type="VisualShaderNodeInput" id=1]
+input_name = "uv"
+
+[sub_resource type="VisualShaderNodeTextureUniform" id=2]
+uniform_name = "TextureUniform"
+texture_type = 2
+color_default = 1
+
+[sub_resource type="VisualShaderNodeScalarOp" id=3]
+default_input_values = [ 0, 0.0, 1, 2.0 ]
+operator = 3
+
+[sub_resource type="VisualShaderNodeVectorLen" id=4]
+
+[sub_resource type="VisualShaderNodeColorConstant" id=5]
+constant = Color( 0.746094, 0.00728607, 0.00728607, 1 )
+
+[resource]
+code = "shader_type spatial;
+render_mode ambient_light_disabled, vertex_lighting;
+
+uniform sampler2D TextureUniform : hint_normal;
+
+
+
+void vertex() {
+// Output:0
+
+}
+
+void fragment() {
+// Input:2
+	vec3 n_out2p0;
+	n_out2p0 = vec3(UV,0.0);
+
+// TextureUniform:4
+	vec3 n_out4p0;
+	float n_out4p1;
+	{
+		vec4 n_tex_read = texture( TextureUniform , n_out2p0.xy );
+		n_out4p0 = n_tex_read.rgb;
+		n_out4p1 = n_tex_read.a;
+	}
+
+// ScalarOp:5
+	float n_in5p1 = 2.00000;
+	float n_out5p0;
+	n_out5p0 = dot(n_out4p0,vec3(0.333333,0.333333,0.333333)) / n_in5p1;
+
+// VectorLen:6
+	float n_out6p0;
+	n_out6p0 = length( vec3(n_out5p0) );
+
+// Color:7
+	vec3 n_out7p0;
+	float n_out7p1;
+	n_out7p0 = vec3(0.746094,0.007286,0.007286);
+	n_out7p1 = 1.000000;
+
+// Output:0
+	ALBEDO = vec3(n_out6p0);
+	EMISSION = n_out7p0;
+	AO = n_out6p0;
+	AO_LIGHT_AFFECT = n_out6p0;
+
+}
+
+void light() {
+// Output:0
+
+}
+"
+graph_offset = Vector2( 181, 3.55209 )
+flags/ambient_light_disabled = true
+flags/vertex_lighting = true
+nodes/fragment/0/position = Vector2( 660, 20 )
+nodes/fragment/2/node = SubResource( 1 )
+nodes/fragment/2/position = Vector2( 0, 100 )
+nodes/fragment/4/node = SubResource( 2 )
+nodes/fragment/4/position = Vector2( 180, 60 )
+nodes/fragment/5/node = SubResource( 3 )
+nodes/fragment/5/position = Vector2( 380, 80 )
+nodes/fragment/6/node = SubResource( 4 )
+nodes/fragment/6/position = Vector2( 460, 210 )
+nodes/fragment/7/node = SubResource( 5 )
+nodes/fragment/7/position = Vector2( 460, 300 )
+nodes/fragment/connections = PoolIntArray( 4, 0, 5, 0, 5, 0, 6, 0, 2, 0, 4, 0, 7, 0, 0, 5, 6, 0, 0, 19, 6, 0, 0, 6, 6, 0, 0, 0 )

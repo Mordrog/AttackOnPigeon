@@ -7,6 +7,7 @@ const MOUSE_SENS_VERTICAL = 0.2
 onready var anim_player = $AnimationPlayer
 onready var raycast = $RayCast
 onready var health_rect = $CanvasLayer/Health
+onready var laser = $laser
 
 const MAX_HEALTH = 10.0
 const MAX_HEALTH_RED = 0.5
@@ -15,6 +16,9 @@ const HIT_HEALTH_RED = 0.75
 var health = MAX_HEALTH
 
 func _ready():
+	laser.translation.x *= 1024/get_viewport().get_visible_rect().size.x
+	laser.translation.y *= get_viewport().get_visible_rect().size.y/600
+	laser.visible = false
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	yield(get_tree(), "idle_frame")
 	get_tree().call_group("zombies", "set_player", self)
@@ -52,13 +56,15 @@ func _physics_process(delta):
 	translation.y = lock_axis_y
 
 	if Input.is_action_pressed("shoot") and !anim_player.is_playing():
-		anim_player.play("shoot")
+		laser.visible = true
+#		anim_player.play("shoot")
 		var coll = raycast.get_collider()
-		#$"../gui/debug".text = str(raycast.get_collider())
 		if raycast.is_colliding() and coll.has_method("kill"):
 			coll.kill()
 			global.points += 1 
 			global.activePigeons -= 1
+	else:
+		laser.visible = false
  
 func damage(damage:float):
 	health -= damage
