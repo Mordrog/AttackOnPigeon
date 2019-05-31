@@ -12,7 +12,7 @@ func _ready():
 	pass # Replace with function body.
 
 func _process(delta):
-	if ms > 9:
+	if ms > 59:
 		s += 1
 		ms = 0
 	
@@ -24,6 +24,5 @@ func _process(delta):
 	pass
 	    
 func _on_Timer_timeout():
-	ms += 1
-	print(str(ms))
+	ms += 1 
 	pass # Replace with function body.
