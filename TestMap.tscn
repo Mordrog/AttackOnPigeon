@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://TestMap.gd" type="Script" id=1]
 [ext_resource path="res://WallsAndTiles.meshlib" type="MeshLibrary" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://player.tscn" type="PackedScene" id=4]
 [ext_resource path="res://3dModels/Prefabs/Cash.tscn" type="PackedScene" id=5]
 [ext_resource path="res://EnemyPiegon.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Timer.gd" type="Script" id=7]
 
 [sub_resource type="Environment" id=1]
 ambient_light_color = Color( 0.952941, 0.890196, 0.890196, 1 )
@@ -866,8 +867,10 @@ environment = SubResource( 1 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.91475, 0 )
 
 [node name="Points" type="Label" parent="."]
-margin_right = 130.0
-margin_bottom = 34.0
+margin_left = 96.0
+margin_top = 15.0
+margin_right = 187.0
+margin_bottom = 49.0
 text = "0"
 clip_text = true
 
@@ -910,3 +913,23 @@ transform = Transform( -4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 1, 4
 
 [node name="Pigeon" parent="." instance=ExtResource( 6 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.10702, 1.42598, -6.80929 )
+
+[node name="lblTimer" type="RichTextLabel" parent="."]
+margin_left = 23.0
+margin_top = 64.0
+margin_right = 210.0
+margin_bottom = 91.0
+text = "0"
+script = ExtResource( 7 )
+
+[node name="Timer" type="Timer" parent="lblTimer"]
+autostart = true
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 23.0
+margin_top = 15.0
+margin_right = 137.0
+margin_bottom = 37.0
+tab_size = 8
+text = "PUNKTY:"
+[connection signal="timeout" from="lblTimer/Timer" to="lblTimer" method="_on_Timer_timeout"]

@@ -93,9 +93,9 @@ func _physics_process(delta):
 			flying_direction.y = -flying_direction.y
 		if translation.y <= start_y_pos:
 			flying_direction.y = -flying_direction.y 
-		if translation.y < 0:
-			translation.y = 2
-			print(str(translation.y))
+		#if translation.y < 0:
+			#translation.y = 2
+			#print(str(translation.y))
 	pass
 
 func rand_next_state():
