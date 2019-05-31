@@ -51,7 +51,8 @@ func _physics_process(delta):
 		#$"../gui/debug".text = str(raycast.get_collider())
 		if raycast.is_colliding() and coll.has_method("kill"):
 			coll.kill()
-			global.points = global.points + 1 
+			global.points += 1 
+			global.activePigeons -= 1
  
 func damage(damage:float):
 	health -= damage

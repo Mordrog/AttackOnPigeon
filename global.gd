@@ -1,5 +1,6 @@
 extends Node
  
+var activePigeons : int
 var points : int 
 # Declare member variables here. Examples:
 # var a = 2

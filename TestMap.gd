@@ -1,27 +1,22 @@
 extends Spatial
  
-var seconds = 0
-var activePigeons = [] 
+var seconds = 0 
 
 # Called when the node enters the scene tree for the first time.
-func _ready():
-	activePigeons.clear() 
+func _ready(): 
 	pass # Replace with function body.
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	if (activePigeons.size() < 400 && seconds == 2):
+	if (global.activePigeons < 400 && seconds == 2):
 		var scene = load("res://EnemyPiegon.tscn")
 		var scene_instance = scene.instance()
-		scene_instance.set_name("scene" + str(activePigeons.size()))
+		scene_instance.set_name("scene" + str(global.activePigeons))
 		scene_instance.set_player($Player)
-
-		if (activePigeons.size() < 50):
-			activePigeons.append(scene_instance)
-			scene_instance.set_translation(Vector3(rand_range(-40,40),1.4,rand_range(-40,40)))
-			add_child(scene_instance)
-			seconds = 0 
-			pass 
+  
+		scene_instance.set_translation(Vector3(rand_range(-40,40),1.4,rand_range(-40,40)))
+		add_child(scene_instance)
+		seconds = 0  
 		pass
 	pass
 	
