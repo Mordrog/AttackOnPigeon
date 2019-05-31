@@ -23,14 +23,14 @@ onready var anim_player = $AnimationPlayer
 
 var PLAYER_DETECTION_RANGE = 4.0
 var IDLE_TIMEOUT = 2.0
-var FLYING_TIMEOUT = 5.0
+var FLYING_TIMEOUT = 10.0
 var DEADFALL_TIMEOUT = 1.0
 var current_state_timeout = 0
 var current_state = PIGEON_STATE.IDLE
 var flying_animation_dir = FLYING_DIR.LEFT
 var sprite;
 var player = null
-var start_y_pos = 0
+var start_y_pos = 1.4
 var FLYING_HEIGHT = 2.0
 var flying_direction = null
 var current_position = Vector3.ZERO
@@ -92,8 +92,10 @@ func _physics_process(delta):
 		if translation.y > FLYING_HEIGHT:
 			flying_direction.y = -flying_direction.y
 		if translation.y <= start_y_pos:
-			flying_direction.y = -flying_direction.y
-
+			flying_direction.y = -flying_direction.y 
+		if translation.y < 0:
+			translation.y = 2
+			print(str(translation.y))
 	pass
 
 func rand_next_state():
@@ -120,8 +122,7 @@ func set_flying_state():
 		rand_range(-1, 1),
 		rand_range(-0.2, 0.2),
 		rand_range(-1, 1))
-		
-			
+		 
 	flying_direction = new_dir_vector.normalized()
 	flying_animation_dir = FLYING_DIR.NONE
 	#translation.y = FLYING_HEIGHT

@@ -14,13 +14,13 @@ func _process(delta):
 	scene_instance.set_name("scene" + str(activePigeons.size()))
 	scene_instance.set_player($Player)
 
-	if (activePigeons.size() < 10):
+	if (activePigeons.size() < 50):
 		activePigeons.append(scene_instance)
+		scene_instance.set_translation(Vector3(rand_range(-40,40),1.4,rand_range(-40,40)))
 		add_child(scene_instance) 
 		pass 
 	pass
 	
 func _physics_process(delta):
-	$Points.text = str(global.points)
-	print(str(global.points))
+	$Points.text = str(global.points) 
 	pass
