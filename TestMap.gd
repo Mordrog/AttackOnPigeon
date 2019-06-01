@@ -1,5 +1,7 @@
 extends Spatial
  
+var laser_burn_scene = load("res://LaserBurn.tscn")
+
 var seconds = 0 
 
 # Called when the node enters the scene tree for the first time.
@@ -31,3 +33,9 @@ func _on_PigeonTimer_timeout():
 		seconds = 0
 		pass
 	pass # Replace with function body.
+
+func _spawn_burn(position:Vector3, rotation:Vector3):
+	var laser_burn = laser_burn_scene.instance()
+	laser_burn.look_at(rotation * -1, Vector3.UP)
+	laser_burn.translation = position
+	add_child(laser_burn)

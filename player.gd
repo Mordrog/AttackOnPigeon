@@ -63,6 +63,10 @@ func _physics_process(delta):
 			coll.kill()
 			global.points += 1 
 			global.activePigeons -= 1
+		# spawn burn
+		if raycast.is_colliding() and $"../".has_method("_spawn_burn"):
+			if coll.get_node("Scene Root"):
+				$"../"._spawn_burn(raycast.get_collision_point(), raycast.get_collision_normal())
 	else:
 		laser.visible = false
  
