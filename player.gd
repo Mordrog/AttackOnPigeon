@@ -8,6 +8,7 @@ onready var anim_player = $AnimationPlayer
 onready var raycast = $RayCast
 onready var health_rect = $CanvasLayer/Health
 onready var laser = $laser
+onready var kittyPlay = $KittyPlay
 
 const MAX_HEALTH = 10.0
 const MAX_HEALTH_RED = 0.5
@@ -55,9 +56,11 @@ func _physics_process(delta):
 	move_and_collide(move_vec * MOVE_SPEED * delta)
 	translation.y = lock_axis_y
 
-	if Input.is_action_pressed("shoot") and !anim_player.is_playing():
+	if Input.is_action_pressed("shoot"):
+		if not kittyPlay.is_playing():
+			kittyPlay.play(0.0)
 		laser.visible = true
-#		anim_player.play("shoot")
+		anim_player.play("shoot")
 		var coll = raycast.get_collider()
 		if raycast.is_colliding() and coll.has_method("kill"):
 			coll.kill()
@@ -68,7 +71,10 @@ func _physics_process(delta):
 			if coll.get_node("Scene Root"):
 				$"../"._spawn_burn(raycast.get_collision_point(), raycast.get_collision_normal())
 	else:
+		if kittyPlay.is_playing():
+			kittyPlay.stop()
 		laser.visible = false
+		anim_player.play("not_shoot")
  
 func damage(damage:float):
 	health -= damage

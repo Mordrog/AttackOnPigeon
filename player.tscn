@@ -1,18 +1,19 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://player.gd" type="Script" id=1]
 [ext_resource path="res://laser.tscn" type="PackedScene" id=2]
-[ext_resource path="res://gun.png" type="Texture" id=3]
-[ext_resource path="res://aim.png" type="Texture" id=4]
+[ext_resource path="res://kitty.ogg" type="AudioStream" id=3]
+[ext_resource path="res://cats.png" type="Texture" id=4]
+[ext_resource path="res://aim.png" type="Texture" id=5]
 
 [sub_resource type="CapsuleShape" id=1]
 radius = 0.5
 height = 2.0
 
-[sub_resource type="Animation" id=2]
-resource_name = "shoot"
-length = 0.6
-step = 0.15
+[sub_resource type="Animation" id=5]
+resource_name = "not_shoot"
+length = 0.1
+loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath("CanvasLayer/Control/Sprite:frame")
 tracks/0/interp = 1
@@ -20,10 +21,28 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.15, 0.3, 0.45 ),
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ 0 ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "shoot"
+length = 0.2
+loop = true
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("CanvasLayer/Control/Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.05, 0.1, 0.15 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 1,
-"values": [ 1, 2, 3, 0 ]
+"values": [ 1, 2, 3, 2 ]
 }
 
 [sub_resource type="Gradient" id=3]
@@ -52,7 +71,11 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00376165, 0, 0.0151234 )
 current = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/not_shoot = SubResource( 5 )
 anims/shoot = SubResource( 2 )
+
+[node name="KittyPlay" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -64,7 +87,7 @@ anchor_bottom = 1.0
 
 [node name="Sprite" type="Sprite" parent="CanvasLayer/Control"]
 position = Vector2( 181.585, -200.21 )
-texture = ExtResource( 3 )
+texture = ExtResource( 4 )
 hframes = 4
 
 [node name="Crosshair" type="TextureRect" parent="CanvasLayer"]
@@ -74,7 +97,7 @@ anchor_right = 0.5
 anchor_bottom = 0.5
 margin_left = -16.0
 margin_top = -16.0
-texture = ExtResource( 4 )
+texture = ExtResource( 5 )
 
 [node name="Health" type="TextureRect" parent="CanvasLayer"]
 modulate = Color( 1, 0, 0, 0 )
@@ -83,3 +106,4 @@ margin_right = 1024.0
 margin_bottom = 602.0
 texture = SubResource( 4 )
 expand = true
+
