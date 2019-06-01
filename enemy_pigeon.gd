@@ -31,7 +31,7 @@ var flying_animation_dir = FLYING_DIR.LEFT
 var sprite;
 var player = null
 var start_y_pos = 1.4
-var FLYING_HEIGHT = 2.0
+var FLYING_HEIGHT = 5.0
 var flying_direction = null
 var current_position = Vector3.ZERO
 var FLYING_SPEED = 2.0
@@ -82,7 +82,11 @@ func _process(delta):
 
 func _physics_process(delta):
 	if isDead:
-        return
+		if current_state == PIGEON_STATE.DEAD_FALL:
+			move_and_collide(Vector3(0, -1.0, 0) * delta * FLYING_SPEED)
+			if translation.y <= start_y_pos:
+				set_dead_state()
+		return
 		
 	if current_state == PIGEON_STATE.FLYING:
 
@@ -130,7 +134,12 @@ func set_flying_state():
 func set_dead_fall_state():
 	current_state = PIGEON_STATE.DEAD_FALL
 	current_state_timeout = DEADFALL_TIMEOUT
-	anim_player.play("Death")
+	
+	anim_player.play("DeathFall")
+	
+func set_dead_state():
+	current_state = PIGEON_STATE.DEAD
+	anim_player.play("Deayh")	
 
 func play_flying_animation():
 	if player == null:
@@ -166,10 +175,9 @@ func play_flying_animation():
 	pass
 
 func kill():
-    isDead = true
-    $CollisionShape.disabled = true
-	
-    anim_player.play("Death")
+	isDead = true
+	$CollisionShape.disabled = true
+	set_dead_fall_state()
 
 func update_frame():
 	match current_state:

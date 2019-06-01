@@ -15,8 +15,9 @@ func _process(delta):
 		var scene_instance = scene.instance()
 		scene_instance.set_name("scene" + str(global.activePigeons))
 		scene_instance.set_player($Player)
-  
+  	
 		scene_instance.set_translation(Vector3(rand_range(-40,40),1.4,rand_range(-40,40)))
+		scene_instance.start_y_pos = 1.0
 		add_child(scene_instance)
 		seconds = 0  
 		pass

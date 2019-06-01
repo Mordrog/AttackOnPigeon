@@ -156,3 +156,4 @@ anims/FlyingLeft = SubResource( 6 )
 anims/FlyingRight = SubResource( 7 )
 anims/FlyingToPlayer = SubResource( 8 )
 anims/Idle = SubResource( 9 )
+
