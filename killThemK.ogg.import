@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/killThemK.ogg-bb59f7b89d9e0398f9b0d8cf4b5a7e76.oggstr"
+
+[deps]
+
+source_file="res://killThemK.ogg"
+dest_files=[ "res://.import/killThemK.ogg-bb59f7b89d9e0398f9b0d8cf4b5a7e76.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

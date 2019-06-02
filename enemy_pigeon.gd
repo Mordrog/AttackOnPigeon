@@ -89,10 +89,15 @@ func _physics_process(delta):
 		return
 		
 	if current_state == PIGEON_STATE.FLYING:
-
 		var collision = move_and_collide(flying_direction * delta * FLYING_SPEED)
 		if collision != null:
 			set_flying_state()
+			if collision.get_collider() == player:
+				player.damage(1)
+				var pushback = player.translation - translation
+				pushback.y = 0
+				player.translation += pushback
+			
 		if translation.y > FLYING_HEIGHT:
 			flying_direction.y = -flying_direction.y
 		if translation.y <= start_y_pos:
@@ -100,6 +105,17 @@ func _physics_process(delta):
 		#if translation.y < 0:
 			#translation.y = 2
 			#print(str(translation.y))
+		var vec_to_player = player.translation - translation
+		vec_to_player = vec_to_player.normalized()
+		raycast.cast_to = (vec_to_player * 10.5)	
+		
+		if raycast.is_colliding():
+			var coll = raycast.get_collider()
+			if coll != null and coll.name == "Player":
+				coll.damage(1)
+				var pushback = coll.translation - translation
+				pushback.y = 0
+				coll.translation += pushback	
 	pass
 
 func rand_next_state():

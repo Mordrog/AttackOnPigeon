@@ -84,4 +84,4 @@ func damage(damage:float):
 	health_rect.modulate.a += HIT_HEALTH_RED
 
 func kill():
-	get_tree().reload_current_scene()
+	get_tree().change_scene("res://GameOver.tscn")

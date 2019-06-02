@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Intro.gd" type="Script" id=1]
 [ext_resource path="res://PigeonScene_3.ogv" type="VideoStream" id=2]
+[ext_resource path="res://killThemK.ogg" type="AudioStream" id=3]
 
 [node name="Spatial" type="Spatial"]
 script = ExtResource( 1 )
@@ -11,3 +12,9 @@ margin_right = 1025.0
 margin_bottom = 598.0
 stream = ExtResource( 2 )
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="timeout" from="Timer" to="." method="timer_timeout_callback"]

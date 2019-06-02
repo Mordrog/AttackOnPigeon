@@ -80,6 +80,7 @@ stream = ExtResource( 3 )
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Control" type="Control" parent="CanvasLayer"]
+editor/display_folded = true
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
@@ -106,4 +107,13 @@ margin_right = 1024.0
 margin_bottom = 602.0
 texture = SubResource( 4 )
 expand = true
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer"]
+margin_left = 680.195
+margin_top = 9.02501
+margin_right = 1020.19
+margin_bottom = 115.025
+text = "WSAD - moving
+Hold left mouse button to shot
+Be aware of pigeons!"
 
